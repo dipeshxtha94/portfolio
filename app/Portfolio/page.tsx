@@ -31,7 +31,7 @@ const Portfolio = () => {
           <li className='mb-2 cursor-pointer font-semibold'>Increment Decrement- Redux Example, Developed with React and Redux</li>
           </Link> 
           <Link href='https://github.com/dipeshxtha94/First-Project-of-JS' target="_blank">
-          <li className='mb-2 cursor-pointer font-semibold'>Some JavaScript's Short Projects- Developed with core Javascript, HTML, CSS</li>
+          <li className='mb-2 cursor-pointer font-semibold'>Some JavaScript&apos;s Short Projects- Developed with core Javascript, HTML, CSS</li>
           </Link>          
                 
         </ol>

@@ -1,20 +1,19 @@
 export default function Loading(){
-    type a={
-        Array: []
-    }
+   
     return(
-        <div>
-            <ul className="list-none pl-6 mt-4 space-y-2">
-                {Array.from(Array(20).keys()).map((i)=>(
-                    <li key={i}>
-                    <span className="inline-block animate-pulse h-5" 
-                    style={{
-                        animationDelay: `${i* 0.05}s`,
-                        animationDuration:'1s,'
-                    }} />
-                  </li>
-                ) )}
-            </ul>
+        <main className='flex flex-row'>
+        <div className='bg-slate-200 mt-48 ml-32 p-8 font-sans'>
+          <h2 className='text-3xl font-semibold' style={{color:'rgb(60 5 245 / 50%)'}}></h2>
+          <h2 className='text-3xl font-semibold' style={{color:'#f30ad9'}}></h2>
+          <p className='text-xl mt-4'></p>
+          <p className='text-xl mt-1' style={{color:'#c70ce7'}}></p>
+          <p className='text-xl mt-1' style={{color:'#5b2e2e'}}>
+        
+              </p>
         </div>
+        <div>
+    
+        </div>
+       </main>
     )
 }

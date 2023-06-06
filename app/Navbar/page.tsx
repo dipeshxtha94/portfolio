@@ -4,7 +4,7 @@
 import { SiEgghead } from 'react-icons/si'
 import Link from 'next/link'
 import dynamic from 'next/dynamic';
-import { useRef } from 'react';
+import { ImHome } from 'react-icons/im'
 
 const Typewriter = dynamic(() => import('typewriter-effect'), { ssr: false });
 
@@ -13,7 +13,8 @@ const Navbar = () => {
  
 
   return (
-    <main className='bg-slate-400 flex justify-between'>
+    <main className='flex flex-col'>
+      <div className='bg-slate-400 flex justify-between'>
       <Link href='/'>
         <div className='flex mt-5 ml-3 font-semibold cursor-pointer'>
           <SiEgghead size={24} color="black" className='' />
@@ -38,7 +39,11 @@ const Navbar = () => {
         <Link href='/About'>
           <li className='mr-16 mt-5 font-semibold border-r-2 hover:bg-slate-500 w-24 text-center'>About</li>
         </Link>
+        <Link href='/'>
+          <ImHome className='mr-16 mt-6 font-semibold border-r-2 hover:bg-slate-500 w-11 text-center' /> 
+        </Link>
       </ul>
+      </div>
     </main>
   )
 }
