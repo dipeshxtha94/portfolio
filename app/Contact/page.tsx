@@ -35,16 +35,16 @@ const Contact = () => {
   }
 
   return (
-    <main className='flex bg-slate-200 pt-10'>
-      <div className='bg-white text-black flex flex-col m-9 pl-16 ml-96 font-serif' style={{ width: '35rem', height: '25rem' }}>
-        <h1 className='text-3xl font-semibold mt-5'>CONTACT US</h1>
+    <main className='flex bg-slate-200 pt-4 xl:pt-10'>
+      <div className='bg-white text-black flex flex-col m-9 pl-4 w-44 h-56 ml-12 font-serif sm:ml-96 sm:pl-16  sm:m-9 sm:w-2/5 sm:h-96' >
+        <h1 className='text-base font-semibold mt-5 xl:text-3xl'>CONTACT US</h1>
         <form action="" onSubmit={handleSubmit(onSubmit)}>
-          <div className='mt-6'>
-            <input type="text" placeholder='Enter your name' className='w-96 border-b-2 border-black outline-none' {...register('name', { required: true })}  autoComplete='off' /> <br />
+          <div className='mt-1 xl:mt-6'>
+            <input type="text" placeholder='Enter your name' className='w-28 text-xs border-b-2 border-black outline-none xl:w-96' {...register('name', { required: true })}  autoComplete='off' /> <br />
             {errors.name && <span>This field is required!</span>}
           </div>
-          <div className='mt-6'>
-            <input type="email" placeholder='Enter a valid Email' className='w-96 border-b-2 border-black outline-none'
+          <div className='mt-1 xl:mt-6'>
+            <input type="email" placeholder='Enter a valid Email' className='w-28 text-xs border-b-2 border-black outline-none xl:w-96'
               {...register('email',
                 {
                   required: 'This field is required',
@@ -58,36 +58,36 @@ const Contact = () => {
             <br />
             {errors.email && <span>{errors.email.message}</span>}
           </div>
-          <div className='mt-6'>
-            <textarea cols={30} rows={4} placeholder='Enter you message here' className='w-96 border-b-2 border-black outline-none' {...register('message', { required: true })}  autoComplete='off' ></textarea> <br />
+          <div className='mt-1 sm:mt-6'>
+            <textarea cols={30} rows={4} placeholder='Enter you message here' className='w-28 text-xs border-b-2 border-black outline-none xl:w-96' {...register('message', { required: true })}  autoComplete='off' ></textarea> <br />
             {errors.message && <span>This field is required</span>}
           </div>
-          <div className='mt-7 mb-3'>
-            <input type="submit" value='Submit' className='w-20 border border-r-4 border-black cursor-pointer hover:bg-slate-100' />
+          <div className='mt-1 mb-2 xl:mt-7 xl:mb-3'>
+            <input type="submit" value='Submit' className='w-11 text-xs border border-r-4 border-black cursor-pointer hover:bg-slate-100 xl:w-20' />
           </div>
         </form>
       </div>
-      <div className='bg-black text-white m-9 pt-11 pl-9 w-80 mt-40 -ml-20 h-96'>
-        <div className='mb-10'>
+      <div className='bg-black text-white m-9 pt-4 pl-1 w-40 mt-36 -ml-14 h-52 xl:h-80 xl:-ml-20 xl:mt-40 xl:w-80 xl:pl-9 xl:pt-11 xl:m-9'>
+        <div className='mb-5 text-xs xl:mb-10 xl:text-base'>
           <div className='flex flex-row'>
-            <FiPhoneCall className='mt-1 mr-3' />
+            <FiPhoneCall className='mr-3 xl:mt-1 xl:mr-3' />
             <h2>CALL ME</h2>
           </div>
           <p>+977-9804361042</p>
         </div >
-        <div className='mb-10'>
+        <div className='mb-5 text-xs xl:mb-10 xl:text-base'>
           <div className='flex flex-row'>
-            <IoLocation className='mt-1 mr-3' />
+            <IoLocation className='mr-2 xl:mt-1 xl:mr-3' />
             <h2>LOCATION</h2>
           </div>
           <p>Urlabari-01, Morang, Nepal</p>
         </div>
-        <div className='mb-10'>
+        <div className='mb-3 text-xs xl:mb-10 xl:text-base'>
           <div className='flex flex-row'>
-            <FaBusinessTime className='mt-1 mr-3' />
+            <FaBusinessTime className='mr-2 xl:mt-1 xl:mr-3' />
             <h2>BUSINESS HOURS</h2>
           </div>
-          <p>All days: 10-5 Except Saturday</p>
+          <p>All days: 10-5</p>
         </div>
       </div>
     </main>
