@@ -6,9 +6,9 @@ import Link from 'next/link'
 const Portfolio = () => {
   return (
     <main className='flex pl-10 flex-col pt-10 xl:pl-32'>
-      <p className='text-2xl font-semibold -ml-1'>List of Projects:</p>
+      <p className='text-sm font-semibold -ml-1 xl:text-2xl'>List of Projects:</p>
       <div>
-        <ol className='list-decimal pt-4 text-lg'>
+        <ol className='list-decimal pt-4 text-xs xl:text-lg'>
         <Link href='https://github.com/dipeshxtha94/frontend-assignment' target='_blank'>
           <li className='mb-2 cursor-pointer font-semibold' >Music Details- Dynamic Routing, Developed with Nextjs13, Redux-toolkit, and TypeScript</li>
           </Link>
